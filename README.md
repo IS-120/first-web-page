@@ -2,8 +2,6 @@
 
 Host a basic index.html file on Github Pages. Include favicons and make sure that the page validates with no errors or warnings.
 
-[Optional]: Include open graph information.
-
 **Prerequisites**:
 
 - VS Code installed and configured.
@@ -93,4 +91,8 @@ After you publish your site, wait a few minutes for it to generate. After it's g
 
 ## Check that your site validates with no errors
 
-Navigate to [Validator.nu](https://validator.nu/) and paste your Github Pages URL into the text field. Select "Show outline" and "Show image report." Click the "Check" button. If you have no errors or warnings, you're good to go!
+Navigate to [Validator.nu](https://validator.nu/) and paste your Github Pages URL into the text field. Select "Show outline" and "Show image report." Click the "Check" button. If you have no errors or warnings, you're good to go! Take a screenshot of your validation report and add it the Feedback Pull-Request comment (see below).
+
+## Leave a comment on the Feedback Pull-Request
+
+Go to the Feedback pull request. At the bottom of the page you will find a comment form. Leave a comment asking us to review your previous commit.
