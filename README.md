@@ -69,13 +69,16 @@ Once any problems are fixed, either choose "Go Live" in the VS Code bottom info 
 Let's add some favicons. You've seen favicons in browser tabs, bookmarks, and on mobile devices. Favicons are the small icons that appear in these, and other, places. They are important for branding and for making your site look professional.
 
 1. Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate your favicons. If you upload a PNG for your favicon, make sure that it is a free image or it is an image you created.
-2. After downloading the favicons, copy the `favicon.ico` file to the root folder where your `index.html` file is. `favicon.ico` is a throwback to original favicons. Most browsers prefer higher-res images, which we will place in the `images` folder. Copy the rest of the favicon files into the images folder. (You can delete the `placeholder.ico` file in the `images` folder.)
-3. Copy the the associated markup into `<head>`.
-4. Update the paths in the markup you just pasted to direct to the browser to your `images` folder by prepending the folder name. For example, change<br>
+2. Set the favicon path to `./images` then generate your favicons.
+3. After downloading the favicons, copy the `favicon.ico` file to the root folder where your `index.html` file is. `favicon.ico` is a throwback to original favicons. Most browsers prefer higher-res images, which we will place in the `images` folder. Copy the rest of the favicon files into the images folder. (You can delete the `placeholder.ico` file in the `images` folder.)
+4. Copy the the generated markup into `<head>`.
+5. Make sure the paths in the markup you just pasted direct to the browser to your `images` folder. For example, instead of<br>
    `href="/apple-touch-icon.png"`<br>
-   to<br>
+   you should have<br>
    `href="./images/apple-touch-icon.png"`<br>
-   Update all the favicon href attributes except for the favicon.ico one. Add a "." to that path.<br>
+   Check this path for all the favicon `href` attributes except for the `favicon.ico` one. Change the `favicon.ico` path to simply<br>
+   `<link rel="shortcut icon" href="favicon.ico">`
+   <br>
    _Notice I also included a period or "." Servers do not need the prefixed period, but Github pages does need it._
 
    ## Check for errors and warnings, then view your page again using Live Server
@@ -86,4 +89,8 @@ Let's add some favicons. You've seen favicons in browser tabs, bookmarks, and on
 
 ## Publish your site on Github pages
 
+After you publish your site, wait a few minutes for it to generate. After it's generated, paste the link into your repo's about section. Also, feel free to delete the contents of `README.md` file from your repo. Change the `README.md` to add a description of your site.
+
 ## Check that your site validates with no errors
+
+Navigate to [Validator.nu](https://validator.nu/) and paste your Github Pages URL into the text field. Select "Show outline" and "Show image report." Click the "Check" button. If you have no errors or warnings, you're good to go!
