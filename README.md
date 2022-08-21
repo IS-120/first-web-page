@@ -58,23 +58,31 @@ The file should be empty. Type an exclamation point `!` and press `Tab` to creat
 
 ## Use Live Server to preview your webpage
 
-Either choose "Go Live" in the VS Code bottom info panel, or find and select "Go Live" in `View -> Command Palette...`
+Before you open your webpage in Live Server, check the bottom left info bar on VS Code. You want to make sure you don't have any errors or warnings which should look like this:<br><br>
+![no errors or warnings](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/errors.png)<br><br>
+If you have errors or warnings, click on the icons to see what they are and fix them.
+
+Once any problems are fixed, either choose "Go Live" in the VS Code bottom info panel, or find and select "Go Live" in `View -> Command Palette...` to view your webpage in a browser.
 
 ## Add favicons
 
-Notice the comment in the `<head>` that indicates where your favicon info should appear.
+Let's add some favicons. You've seen favicons in browser tabs, bookmarks, and on mobile devices. Favicons are the small icons that appear in these, and other, places. They are important for branding and for making your site look professional.
 
 1. Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate your favicons. If you upload a PNG for your favicon, make sure that it is a free image or it is an image you created.
-2. After downloading the favicons, copy the `favicon.ico` file to the root folder where your `index.html` file is. Copy the rest of the favicon files into the images folder.
-3. Copy the the associated markup into i`<head>`.
-4. Update the markup to direct to your images folder by prepending the folder name. For example, change<br>
+2. After downloading the favicons, copy the `favicon.ico` file to the root folder where your `index.html` file is. `favicon.ico` is a throwback to original favicons. Most browsers prefer higher-res images, which we will place in the `images` folder. Copy the rest of the favicon files into the images folder. (You can delete the `placeholder.ico` file in the `images` folder.)
+3. Copy the the associated markup into `<head>`.
+4. Update the paths in the markup you just pasted to direct to the browser to your `images` folder by prepending the folder name. For example, change<br>
    `href="/apple-touch-icon.png"`<br>
    to<br>
    `href="./images/apple-touch-icon.png"`<br>
    Update all the favicon href attributes except for the favicon.ico one. Add a "." to that path.<br>
    _Notice I also included a period or "." Servers do not need the prefixed period, but Github pages does need it._
 
-## Commit your changes and sync these changes to Github
+   ## Check for errors and warnings, then view your page again using Live Server
+
+   If everything looks good then.....
+
+## USe VS Code's Source Control (in the sidebar) to commit your changes and sync these changes to Github
 
 ## Publish your site on Github pages
 
