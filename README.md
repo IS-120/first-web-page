@@ -36,4 +36,7 @@ to<br>
   Either choose "Go Live" in the bottom info panel, or find and select "Go Live" in `View -> Command Palette...`
 
   ## Commit your changes and sync these changes to Github
+  ## Publish your site on Github pages
+  ## Check that your site validates with no errors
+  
   
