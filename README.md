@@ -4,14 +4,14 @@ Host a basic index.html file on Github Pages. Include favicons and make sure tha
 
 [Optional]: Include open graph information.
 
-**Prereq**:
+**Prerequisites**:
 
 - VS Code installed and configured.
 - This Github Classroom assignment accepted and a repo of it created on your Github account.
 
 ## :large_orange_diamond: Git
 
-You need to use the Git software tool to upload your files to Github so that they can be hosted on Github Pages. Follow along in my [Installing and configurign git](https://youtu.be/NFlwNFBTw4c) video to learn how to install Git on your computer and then configure your Git username, email, and, finally, set the first branch name to "main".
+You need to use the Git software tool to upload your files to Github so that they can be hosted on Github Pages. Follow along in my [Installing and configuring git](https://youtu.be/NFlwNFBTw4c) video to learn how to install Git on your computer and then configure your Git username, email, and, finally, set the first branch name to "main".
 
 ## Clone this assignment repo to VS Code
 
@@ -20,14 +20,45 @@ At the top right of your repo, find and click on the Code button and copy the UR
 
 Open VS Code, and choose "Clone Git repository" on the welcome screen or in the command palette, `View -> Command Palette...`. Paste the URL, select a folder on your computer to copy the files, and when prompted, open the local copy of the repo in VS Code.
 
-## Personalize your index.html file
+## Create and personalize your index.html file
 
 Open the `index.html` file in VS Code.
 
-1. In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like &ndash; "First web page" is fine, but creativity is fun.
-2. Also, in the `<head>`. find the `<meta name="description" content="">` element and add a description of your page in between the double quotes of the content attribute. This description is what appears on search engine results. Keep your description under 150 characters.
-3. Next, in the `<body>`, change the heading text in between the `<h1>` tags.
-4. Finally, add some text in the `<p>` element.
+The file should be empty. Type an exclamation point `!` and press `Tab` to create the basic structure of an HTML file. You should see the following markup appear in the file:
+
+```<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+```
+
+### Configuring `<head>`
+
+- In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like &ndash; "First web page" is fine, but creativity is fun.
+- Let's add a description of your site that will appear on search engine results. Keep your description under 150 characters.
+  - In the `<head>` above `<title>` enter a new line
+  - On the new line, type `meta:desc` and press `TAB`. The following HTML should appear:<br> `<meta name="description" content="">`
+  - Add a description of your page between the double quotes of the content attribute
+
+### Adding `<body>` content
+
+- Add a heading. Below the `<body>` tag, type `h1` and press `TAB`
+- Add some heading text between the `<h1>` tags. Heading text is important for search engine optimization. Choose a heading that accurately describes your page.
+- On a new line below your `<h1>`, type `p` and press `TAB`
+- Add some text inside the `<p>` tags.
+- Save your file
+
+## Use Live Server to preview your webpage
+
+Either choose "Go Live" in the VS Code bottom info panel, or find and select "Go Live" in `View -> Command Palette...`
 
 ## Add favicons
 
@@ -42,10 +73,6 @@ Notice the comment in the `<head>` that indicates where your favicon info should
    `href="./images/apple-touch-icon.png"`<br>
    Update all the favicon href attributes except for the favicon.ico one. Add a "." to that path.<br>
    _Notice I also included a period or "." Servers do not need the prefixed period, but Github pages does need it._
-
-## Use Live Server to preview your webpage
-
-Either choose "Go Live" in the VS Code bottom info panel, or find and select "Go Live" in `View -> Command Palette...`
 
 ## Commit your changes and sync these changes to Github
 
