@@ -8,16 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2 
-    - name: Checks HTML5
-      uses: Cyb3r-Jak3/html5validator-action
+    - name: HTML5Validator
+      uses: Cyb3r-Jak3/html5validator-action@v1
       with:
         root: /
         
-  linters:
-    name: stylelint
-    runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v1
-      - uses: actions-hub/stylelint@master
+    - name: stylelint
+      uses: actions-hub/stylelint@master
