@@ -14,10 +14,10 @@ jobs:
       with:
         root: /
         
-    - name: stylelint 
-    - uses: actions-hub/stylelint@master
-        
-    - uses: actions/upload-artifact@v3
-      with:
-        name: log
-        path: log.log
+  linters:
+    name: stylelint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions-hub/stylelint@master
