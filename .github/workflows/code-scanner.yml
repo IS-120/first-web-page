@@ -7,21 +7,18 @@ on:
 jobs:
   HTML-validator:
     name: HTML5 Validator
-    runs-on: ubuntu-latest   
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: Cyb3r-Jak3/html5validator-action@v7.1.1
         with:
           root: .
- 
- # style-linter:
- #  name: stylelint
- #  runs-on: ubuntu-latest
- #  steps:
- #    - uses: actions/checkout@v3
-#   - uses: actions-hub/stylelint@v1.1.3    
- #      env:
-  #        PATTERN: "styles/*.css"
 
-
-
+  HTML-proofer:
+    name: html-proof
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: chabad360/htmlproofer@master
+        with:
+          directory: "."
