@@ -1,0 +1,21 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "main" ]
+
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+  check:
+    runs-on: ubuntu-latest
+    steps:
+     - name: HTML validator
+       uses: Cyb3r-Jak3/html5validator-action@v7.1.1
+       with:
+        continue-on-error: true
+
