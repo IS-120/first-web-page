@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2 
     - name: Checks HTML5
-      uses: Cyb3r-Jak3/html5validator-action@<latest version>
+      uses: Cyb3r-Jak3/html5validator-action
       with:
         root: /
         
