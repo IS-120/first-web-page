@@ -11,7 +11,9 @@ Host a basic index.html file on Github Pages. Include favicons and make sure tha
 |:----|
 |The repo has extra files (*.js and *.json) for automated testing / grading. Don't delete files that you haven't created.|
 
-:movie_camera: **BONUS:** [Assignment walkthrough video](https://youtu.be/yBktZhp09kg) - _helpful if you are new to VS Code, Git, and Github. Follow along while you complete the assignment._
+| :movie_camera: **BONUS:** [Assignment walkthrough video](https://youtu.be/yBktZhp09kg) |
+|:----|
+|<p>_Helpful if you are new to VS Code, Git, and Github. Follow along while you complete the assignment._</p><p>**NOTE:** At the end of the video, I took a screenshot of the `validator.nu` output. While you still need to run your site through `validator.nu` to check for errors, you no longer need to screenshot your validator output anymore. I've added a test in the repo to indicate that validation passed.</p>| 
 
 ## :large_orange_diamond: Git
 
@@ -95,7 +97,7 @@ If everything looks good then.....
 
 ## :rocket: Publish your site on Github pages
 
-After you publish your site, wait a few minutes for it to generate. After it's generated, paste the link into your repo's about section. Also, feel free to delete the contents of `README.md` file from your repo. Change the `README.md` to add a description of your site.
+After you publish your site, wait a few minutes for it to generate. After it's generated, paste the link into your repo's about section. Also, feel free to delete the contents of `README.md` file from your repo. Change the `README.md` to add a description of your site. You can still view the original `README.md` file in the Feedback branch on Github.
 
 ## :no_entry_sign: Check that your site validates with no errors
 
