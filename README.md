@@ -11,7 +11,7 @@ Host a basic index.html file on Github Pages. Include favicons and make sure tha
 |:----|
 |The repo has extra files (*.js and *.json) for automated testing / grading. Don't delete files that you haven't created.|
 
-| :movie_camera: **BONUS:** [Assignment walkthrough video](https://youtu.be/yBktZhp09kg) |
+| ✨ **BONUS:** [Assignment walkthrough video](https://youtu.be/yBktZhp09kg) |
 |:----|
 |<p>_Helpful if you are new to VS Code, Git, and Github. Follow along while you complete the assignment._</p><p>**NOTE:** At the end of the video, I took a screenshot of the `validator.nu` output. While you still need to run your site through `validator.nu` to check for errors, you no longer need to screenshot your validator output anymore. I've added a test in the repo to indicate that validation passed.</p>| 
 
