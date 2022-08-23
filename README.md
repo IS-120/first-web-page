@@ -7,6 +7,10 @@ Host a basic index.html file on Github Pages. Include favicons and make sure tha
 - VS Code installed and configured.
 - This Github Classroom assignment accepted and a repo of it created on your IS-120 Github account.
 
+| :warning: Extra files |
+|:----|
+|The repo has extra files (*.js and *.json) for automated testing / grading. Don't delete files that you haven't created.|
+
 :movie_camera: **BONUS:** [Assignment walkthrough video](https://youtu.be/yBktZhp09kg) - _helpful if you are new to VS Code, Git, and Github. Follow along while you complete the assignment._
 
 ## :large_orange_diamond: Git
