@@ -5,12 +5,9 @@ Host a basic index.html file on Github Pages. Include favicons and make sure tha
 **Prerequisites**:
 
 - VS Code installed and configured.
-- This Github Classroom assignment accepted and a repo of it created on your Github account.
+- This Github Classroom assignment accepted and a repo of it created on your IS-120 Github account.
 
-| :movie_camera: BONUS: Assignment walk through video                     |
-| :---------------------------------------------------------------------- |
-| [![walk through video](images/video.png)](https://youtu.be/yBktZhp09kg) |
-| <em>Helpful if you are new to VS Code, Git and Github.</em>             |
+:movie*camera: BONUS: [Assignment walkthrough video](https://youtu.be/yBktZhp09kg) - \_helpful if you are new to VS Code, Git and Github*.
 
 ## :large_orange_diamond: Git
 
@@ -29,7 +26,8 @@ Open the `index.html` file in VS Code.
 
 The file should be empty. Type an exclamation point `!` and press `Tab` to create the basic structure of an HTML file. You should see the following markup appear in the file:
 
-```<!DOCTYPE html>
+```
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -72,17 +70,18 @@ Once any problems are fixed, either choose "Go Live" in the VS Code bottom info 
 Let's add some favicons. You've seen favicons in browser tabs, bookmarks, and on mobile devices. Favicons are the small icons that appear in these, and other, places. They are important for branding and for making your site look professional.
 
 1. Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate your favicons. If you upload a PNG for your favicon, make sure that it is a free image or it is an image you created.
-2. Set the favicon path to `./images` then generate your favicons.
-3. After downloading the favicons, copy the `favicon.ico` file to the root folder where your `index.html` file is. `favicon.ico` is a throwback to original favicons. Most browsers prefer higher-res images, which we will place in the `images` folder. Copy the rest of the favicon files into the images folder. (You can delete the `placeholder.ico` file in the `images` folder.)
-4. Copy the the generated markup into `<head>`.
-5. Make sure the paths in the markup you just pasted direct to the browser to your `images` folder. For example, instead of<br>
+2. At the bottom of the page select "I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here:" and enter `./images/` as the path for your favicons.
+3. Click the button to generate your favicons and HTML code.
+4. After downloading the favicons, copy the `favicon.ico` file to the root folder where your `index.html` file is. `favicon.ico` is a throwback to original favicons. Most browsers prefer higher-res images, which we will place in the `images` folder. Copy the rest of the favicon files into the images folder. (You can delete the `placeholder.ico` file in the `images` folder.)
+5. Copy the the generated markup into `<head>`.
+6. Make sure the paths in the markup you just pasted direct to the browser to your `images` folder. For example, instead of<br>
    `href="/apple-touch-icon.png"`<br>
    you should have<br>
    `href="./images/apple-touch-icon.png"`<br>
    Check this path for all the favicon `href` attributes except for the `favicon.ico` one. Change the `favicon.ico` path to simply<br>
    `<link rel="shortcut icon" href="favicon.ico">`
    <br>
-   _Notice I also included a period or "." Servers do not need the prefixed period, but Github pages does need it._
+   _Notice I also included a period or `.` before the first slash. Servers do not need the prefixed period, but Github pages does need it._
 
 ## Check for errors and warnings, then view your page again using Live Server
 
@@ -92,7 +91,7 @@ If everything looks good then.....
 
 ## :rocket: Publish your site on Github pages
 
-After you publish your site, wait a few minutes for it to generate. After it's generated, paste the link into your repo's about section. Also, feel free to delete the contents of `README.md` file from your repo. Change the `README.md` to add a description of your site.
+After you publish your site, wait a few minutes for it to generate. After it's generated, paste the link into your repo's about section. Also, feel free to delete the contents of `README.md` file from your repo. Change the `README.md` to add a description of your site. You can still view the original `README.md` file in the Feedback branch on Github.
 
 ## :no_entry_sign: Check that your site validates with no errors
 
