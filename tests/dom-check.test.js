@@ -1,12 +1,5 @@
 const dom = require("./dom-check.js");
 
-test("HTML must validate", () => {
-  return validateHTML.then(result => {
-    console.log(result.message);
-    expect(result.messageNum).toBe(0);
-  });
-});
-
 test("<head> should have a <title>", () => {
   const title = dom.window.document.querySelector("title");
   expect(title).not.toBeNull();
