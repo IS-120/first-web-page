@@ -7,9 +7,9 @@ Host a basic index.html file on Github Pages. Include favicons and make sure tha
 - VS Code installed and configured.
 - This Github Classroom assignment accepted and a repo of it created on your IS-120 Github account.
 
-| :warning: Extra files                                                                                                    |
-| :----------------------------------------------------------------------------------------------------------------------- |
-| The repo has extra files (_.js and _.json) for automated testing / grading. Don't delete files that you haven't created. |
+| :warning: Extra files                                                                                                                                                                    |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The repo has extra files (two json files and `test` and `.github` folders) for automated testing. Except for images in the `images` folder, don't delete files that you haven't created. |
 
 | ✨ **BONUS:** Assignment walk through video]                                                                                                                                                                                                                                                                                                                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -20,7 +20,7 @@ Host a basic index.html file on Github Pages. Include favicons and make sure tha
 
 You need to use the Git software tool to upload your files to Github so that they can be hosted on Github Pages. Follow along in my [Installing and configuring git](https://youtu.be/NFlwNFBTw4c) video to learn how to install Git on your computer and then configure your Git username, email, and, finally, set the first branch name to "main".
 
-## :octocat: Clone this assignment repo to VS Code
+## :pencil: Clone this assignment repo to VS Code
 
 At the top right of your repo, find and click on the Code button and copy the URL in the HTTPS field (see image below)
 ![location of clone url](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/code-clone.png))
@@ -95,6 +95,26 @@ Let's add some favicons. You've seen favicons in browser tabs, bookmarks, and on
 If everything looks good then.....
 
 ## :arrow_up: Use VS Code's Source Control (in the sidebar) to commit your changes and sync these changes to Github
+
+Open the repo in Github and check that you've passed the automated tests. Look at the top right of your repo header. If you have passed all the tests, you'll see a green check mark:
+
+![passed tests](images/pass.png)
+
+If you failed any tests, you will see a red X. Click on the X to see which test failed. Click on the failed test name for more details.
+
+![failed tests](images/fail.png)
+
+If you see a yellow dot, it means that the test is still running. Wait for the test to finish.
+
+### Current automated tests
+
+- HTML validation
+- HTML proofer
+- `<head>` should have a `<title>`
+- `<head>` should have a `<meta>` description element
+- `index.html` should contain an `<h1>`
+- `index.html` should contain a `<p>`
+- `index.html` should contain favicon information
 
 ## :rocket: Publish your site on Github pages
 
