@@ -1,57 +1,61 @@
 # First web page assignment
 
-Host a basic index.html file on Github Pages. Include favicons and make sure that the page validates with no errors or warnings.
+## Objectives
+
+Host a basic `index.html` file on Github Pages. Include a favicon and make sure that the page validates with no errors or warnings.
 
 **Prerequisites**:
 
 - VS Code installed and configured.
+- Git installed and configured. For help with installing and configuring Git, view my [Installing Git for IS 120](https://youtu.be/zshf_32xbsI) video.
 - This Github Classroom assignment accepted and a repo of it created on your IS-120 Github account.
 
-| :warning: Extra files                                                                                                                                                                    |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| The repo has extra files (two json files and `test` and `.github` folders) for automated testing. Except for images in the `images` folder, don't delete files that you haven't created. |
+| ⚠️ Extra files                                                                                                                                                                          |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The assignment repos in this course have extra files and folders (two `.json` files and `test`,`readme-assets`, and `.github` folders) for automated testing. Don't delete these files. |
 
-| ✨ **BONUS:** Assignment walk through video]                                                                                                                                                                                                                                                                                                                                                                                |
+<!-- | ✨ **BONUS:** Assignment walk through video]                                                                                                                                                                                                                                                                                                                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![walk through video](images/video.png)](https://youtu.be/yBktZhp09kg)                                                                                                                                                                                                                                                                                                                                                     |
-| <p>_Helpful if you are new to VS Code, Git, and Github. Follow along while you complete the assignment._</p><p>**NOTE:** At the end of the video, I took a screenshot of the `validator.nu` output. While you still need to run your site through `validator.nu` to check for errors, you no longer need to screenshot your validator output anymore. I've added a test in the repo to indicate that validation passed.</p> |
+| <p>_Helpful if you are new to VS Code, Git, and Github. Follow along while you complete the assignment._</p>| -->
 
-## :large_orange_diamond: Git
+## 📝Clone this assignment repo to VS Code
 
-You need to use the Git software tool to upload your files to Github so that they can be hosted on Github Pages. Follow along in my [Installing and configuring git](https://youtu.be/NFlwNFBTw4c) video to learn how to install Git on your computer and then configure your Git username, email, and, finally, set the first branch name to "main".
+| 💡 Organization                                                                                                           |
+| :------------------------------------------------------------------------------------------------------------------------ |
+| I recommend creating a folder on your computer specifically for this class and cloning all your assignment repos into it. |
 
-## :pencil: Clone this assignment repo to VS Code
+At the top right of your Github repo, find and click on the Code button and copy the URL in the HTTPS field (see image below)
 
-At the top right of your repo, find and click on the Code button and copy the URL in the HTTPS field (see image below)
-![location of clone url](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/code-clone.png))
+![location of clone url](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/code-clone.png)
 
 Open VS Code, and choose "Clone Git repository" on the welcome screen or in the command palette, `View -> Command Palette...`. Paste the URL, select a folder on your computer to copy the files, and when prompted, open the local copy of the repo in VS Code.
 
 ## :page_facing_up: Create and personalize your index.html file
 
-Open the `index.html` file in VS Code.
+Open the Explorer sidebar. Either click on the Explorer icon in the VS Code Activity Bar (vertical menu with icons) or use the keyboard shortcut `Ctrl-B` on a PC or `⌘B` on a Mac. Next, open the `index.html` file.
 
 The file should be empty. Type an exclamation point `!` and press `Tab` to create the basic structure of an HTML file. You should see the following markup appear in the file:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
 </html>
 ```
 
 ### Configuring `<head>`
 
-- In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like &ndash; "First web page" is fine, but creativity is fun.
-- Let's add a description of your site that will appear on search engine results. Keep your description under 150 characters.
+Elements in the `<head>` section of an HTML file are not visible on the page. They are used to configure the page, and give information to the browser and search engines.
+
+- In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like &ndash; "First web page" is fine, but you can be creative.
+- Web pages should include a _meta description_ which is a short summary of what the page is about. Meta descriptions help with SEO (search engine optimization). If a meta description exists, it's displayed in online search results. Meta descriptions should be kept under 150 characters long.
   - In the `<head>` above `<title>` enter a new line
   - On the new line, type `meta:desc` and press `TAB`. The following HTML should appear:<br> `<meta name="description" content="">`
   - Add a description of your page between the double quotes of the content attribute
