@@ -25,7 +25,7 @@ Host a basic `index.html` file on Github Pages. Include a favicon and make sure 
 | :------------------------------------------------------------------------------------------------------------------------ |
 | I recommend creating a folder on your computer specifically for this class and cloning all your assignment repos into it. |
 
-At the top right of your Github repo, find and click on the Code button and copy the URL in the HTTPS field (see image below)
+At the top right of your Github repo, find and click the Code button and copy the URL in the HTTPS field (see image below)
 
 ![location of clone url](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/code-clone.png)
 
@@ -54,7 +54,18 @@ The file should be empty. Type an exclamation point `!` and press `Tab` to creat
 
 Elements in the `<head>` section of an HTML file are not visible on the page. They are used to configure the page, and give information to the browser and search engines.
 
-- In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like &ndash; "First web page" is fine, but you can be creative.
+- In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like. For information on best practices for page titles, see MDN's [The document title element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title). A tl;dr from the MDN link, the page title should be:
+
+  - _for SEO_
+    - descriptive of the page
+    - less than 55-60 characters long
+    - unique for each page
+  - _for accessibility_
+    - followed by the website name, for example
+      ```html
+      <title>Home - Possum Palooza</title>
+      ```
+
 - Web pages should include a _meta description_ which is a short summary of what the page is about. Meta descriptions help with SEO (search engine optimization). If a meta description exists, it's displayed in online search results. Meta descriptions should be kept under 150 characters long.
   - In the `<head>` above `<title>` enter a new line
   - On the new line, type `meta:desc` and press `TAB`. The following HTML should appear:<br> `<meta name="description" content="">`
