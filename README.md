@@ -114,23 +114,27 @@ Elements in the `<body>` section of an HTML file are visible on the browser page
 
 ## :computer: Use Live Server to preview your webpage
 
-Before you open your webpage in Live Server, check the bottom left status bar on VS Code. You want to make sure you don't have any errors or warnings which should look like this:<br><br>
-![no errors or warnings](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/errors.png)<br><br>
-If you have errors or warnings, click on the icons to see what they are and fix them.
+Before you open your webpage in Live Server, make sure all your files are saved, then check the bottom left status bar on VS Code. You want to make sure you don't have any errors or warnings which should look like this:
 
-Once any problems are fixed, either choose "Go Live" in the bottom right of the status bar, or find and select "Go Live" in `View -> Command Palette...` to view your webpage in a browser.
+![no errors or warnings](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/errors.png)
 
-Make sure that you can see your favicon in the browser tab. Sometimes favicon changes aren't loaded right away and you may need to _hard reload_ your page to see the changes.
+If you have errors or warnings, click on the icons to see what they are and fix them, and re-save your files.
+
+Once any problems are fixed,  either choose "Go Live" in the bottom right of the status bar, or find and select "Go Live" in `View -> Command Palette...` to view your webpage in a browser.
+
+Make sure that you can see your favicon in the browser tab. Sometimes favicon changes aren't loaded right away, so if you don't see your favicon, first try to _hard reload_ your page to see if that makes them appear.
 
 | 💡 How to hard reload a web page  |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
  To force a page reload, on Window, press `Ctrl`-`Shift`-`R`or `Ctrl`-`F5`; on Mac press `⌘`-`⇧`-`R`.
 
+If a hard reload doesn't work, check your image paths and make sure your files are in the right location.
+
 If everything looks good then.....
 
-## :arrow_up: Use VS Code's Source Control (in the sidebar) to commit your changes and sync these changes to Github
+## :arrow_up: Use VS Code's Source Control to commit your changes and sync these changes to Github
 
-Open the Source Control menu from the VS Code Activity bar. You should see a list of files that have been changed. Enter a commit message and click the checkmark to commit your changes. You can also use the keyboard shortcut `Ctrl`-`Enter` to commit your changes.
+Open the Source Control menu from the VS Code Activity bar. You should see a list of files that have been changed. Enter a commit message and click `✓ Commit` to commit your changes. You can also use the keyboard shortcut `Ctrl`-`Enter` to commit your changes.
 
 Open the repo in Github and check that you've passed the automated tests. Look at the top right of your repo header. If you have passed all the tests, you'll see a green check mark:
 
