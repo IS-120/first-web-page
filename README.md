@@ -8,34 +8,29 @@ Host a basic `index.html` file on Github Pages. Include a favicon and make sure 
 
 - VS Code installed and configured.
 - Git installed and configured. For help with installing and configuring Git, view my [Installing Git for IS 120](https://youtu.be/zshf_32xbsI) video.
-- This Github Classroom assignment accepted and a repo of it created on your IS-120 Github account.
+- This Github Classroom assignment accepted and a repo of it created on your IS 120 organization Github account.
 
 | ⚠️ Extra files                                                                                                                                                                          |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | The assignment repos in this course have extra files and folders (two `.json` files and `test`,`readme-assets`, and `.github` folders) for automated testing. Don't delete these files. |
 
-<!-- | ✨ **BONUS:** Assignment walk through video]                                                                                                                                                                                                                                                                                                                                                                                |
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![walk through video](images/video.png)](https://youtu.be/yBktZhp09kg)                                                                                                                                                                                                                                                                                                                                                     |
-| <p>_Helpful if you are new to VS Code, Git, and Github. Follow along while you complete the assignment._</p>| -->
-
 ## 📝Clone this assignment repo to VS Code
 
-| 💡 Organization                                                                                                           |
-| :------------------------------------------------------------------------------------------------------------------------ |
-| I recommend creating a folder on your computer specifically for this class and cloning all your assignment repos into it. |
+| 💡 Organization                                                                                                                     |
+| :---------------------------------------------------------------------------------------------------------------------------------- |
+| I recommend creating a folder on your computer specifically for this class and choosing it to clone all your assignment repos into. |
 
 At the top right of your Github repo, find and click the Code button and copy the URL in the HTTPS field (see image below)
 
 ![location of clone url](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/code-clone.png)
 
-Open VS Code, and choose "Clone Git repository" on the welcome screen or in the command palette, `View -> Command Palette...`. Paste the URL, select a folder on your computer to copy the files, and when prompted, open the local copy of the repo in VS Code.
+Open VS Code, and choose "Clone Git repository" on the welcome screen or in the command palette, `View -> Command Palette...`. Paste the URL, select a folder on your computer to copy the containing repo folder and its files, and when prompted, open the local copy of the repo in VS Code.
 
 ## :page_facing_up: Create and personalize your index.html file
 
 Open the Explorer sidebar. Either click on the Explorer icon in the VS Code Activity Bar (vertical menu with icons) or use the keyboard shortcut `Ctrl-B` on a PC or `⌘B` on a Mac. Next, open the `index.html` file.
 
-The file should be empty. Type an exclamation point `!` and press `Tab` to create the basic structure of an HTML file. You should see the following markup appear in the file:
+The file should be empty. Use Emmet to generate a the basic structure of an HTML file: type an exclamation point `!` and press `Tab`. You should see the following markup appear in the file:
 
 ```html
 <!DOCTYPE html>
@@ -54,62 +49,88 @@ The file should be empty. Type an exclamation point `!` and press `Tab` to creat
 
 Elements in the `<head>` section of an HTML file are not visible on the page. They are used to configure the page, and give information to the browser and search engines.
 
-- In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like. For information on best practices for page titles, see MDN's [The document title element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title). A tl;dr from the MDN link, the page title should be:
+#### Page title
 
-  - _for SEO_
-    - descriptive of the page
-    - less than 55-60 characters long
-    - unique for each page
-  - _for accessibility_
-    - followed by the website name, for example
-      ```html
-      <title>Home - Possum Palooza</title>
-      ```
+- In the `<head>` section, find the `<title>` element and add a title for your page. Name it anything you'd like. For information on best practices for page titles, see MDN's [The document title element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title).
 
-- Web pages should include a _meta description_ which is a short summary of what the page is about. Meta descriptions help with SEO (search engine optimization). If a meta description exists, it's displayed in online search results. Meta descriptions should be kept under 150 characters long.
-  - In the `<head>` above `<title>` enter a new line
-  - On the new line, type `meta:desc` and press `TAB`. The following HTML should appear:<br> `<meta name="description" content="">`
-  - Add a description of your page between the double quotes of the content attribute
+A **tl;dr** from the MDN link, the page title should be:
 
-### Adding `<body>` content
+- _for SEO_
+  - descriptive of the page
+  - less than 55-60 characters long
+  - unique for each page
+- _for accessibility_
+
+  - followed by the website name; for example, if you were writing a website about Possums called "Possum Palooza", your home page title might look like this:
+
+    ```html
+    <title>Home - Possum Palooza</title>
+    ```
+
+#### Page description
+
+Web pages should include a _meta description_ which is a short summary of what the page is about. Meta descriptions help with SEO (search engine optimization). If a meta description exists, it's displayed in online search results. Meta descriptions should be kept under 150 characters long.
+
+- In the `<head>` above `<title>` enter a new line
+- On the new line, use Emmet: type `meta:desc` and press `TAB`. The following HTML should appear:<br> `<meta name="description" content="">`
+- Add a description of your page between the double quotes of the content attribute
+
+#### 😁 Favicon
+
+A favicon is a small icon that appears in a browser's address bar, on a browser tab, and on bookmarks. Favicons are important for branding and user experience. They help users identify your site and make it easier to find your site in their browser history.
+
+![favicon browser tab](readme-assets/browser-tab.png)
+
+By default, browsers look in the root folder of a website for a `favicon.ico` file. At a bare minimum, you should include a `favicon.ico` file in your root folder (where your index.html file is located).
+
+Modern browsers can display higher resolution favicons, so it's best to include different versions of your favicon.
+
+- Use [favicon.io](https://favicon.io/) to either convert a PNG file (upload a square PNG file with a _simple image_ that's at least 200px wide) or generate one from text or an emoji.
+- Download the images the site generates and extract them into your`images` folder.
+- Move the `favicon.ico` from your `images` folder to your root folder (same location as your `index.html` file).
+- Copy the HTML from the `favicon.io` site and paste it into the `<head>` section of your `index.html` file.
+- Change the path in the copied HTML to point to the files in your `images` folder. Because of some quirks with how Github pages works, you will also need to add a `.` before your `image` folder in the path (you do not, and should not, add the `.` to paths in your `<body>` section). The HTML in your head should look like this:
+
+  ```html
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  ```
+
+| ⚠️ Check your formatting  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| When you save your `index.html` file, check that your `<link>` tags do not end with a `/>` and/or are broken up to several lines. This means Prettier is formatting your HTML. If this is the case, you need to disable Prettier formatting for HTML. See the **Configure VS Code** page on Learning Suite for information on how to do this. |
+
+### Configuring `<body>`
+
+Elements in the `<body>` section of an HTML file are visible on the browser page. They are used to display content to the user.
 
 - Add a heading. Below the `<body>` tag, type `h1` and press `TAB`
-- Add some heading text between the `<h1>` tags. Heading text is important for search engine optimization. Choose a heading that accurately describes your page.
+- Add some heading text between the `<h1>` tags. Heading text is important for search engine optimization. Choose a heading that accurately describes your page. By convention, you should only have one `<h1>` element per page.
 - On a new line below your `<h1>`, type `p` and press `TAB`
 - Add some text inside the `<p>` tags.
 - Save your file
 
 ## :computer: Use Live Server to preview your webpage
 
-Before you open your webpage in Live Server, check the bottom left info bar on VS Code. You want to make sure you don't have any errors or warnings which should look like this:<br><br>
+Before you open your webpage in Live Server, check the bottom left status bar on VS Code. You want to make sure you don't have any errors or warnings which should look like this:<br><br>
 ![no errors or warnings](https://raw.githubusercontent.com/lsburtonBYU/codepen-images/main/errors.png)<br><br>
 If you have errors or warnings, click on the icons to see what they are and fix them.
 
-Once any problems are fixed, either choose "Go Live" in the VS Code bottom info panel, or find and select "Go Live" in `View -> Command Palette...` to view your webpage in a browser.
+Once any problems are fixed, either choose "Go Live" in the bottom right of the status bar, or find and select "Go Live" in `View -> Command Palette...` to view your webpage in a browser.
 
-## :grin: Add favicons
+Make sure that you can see your favicon in the browser tab. Sometimes favicon changes aren't loaded right away and you may need to _hard reload_ your page to see the changes.
 
-Let's add some favicons. You've seen favicons in browser tabs, bookmarks, and on mobile devices. Favicons are the small icons that appear in these, and other, places. They are important for branding and for making your site look professional.
-
-1. Use [RealFaviconGenerator](https://realfavicongenerator.net/) to generate your favicons. If you upload a PNG for your favicon, make sure that it is a free image or it is an image you created.
-2. At the bottom of the page select "I cannot or I do not want to place favicon files at the root of my web site. Instead I will place them here:" and enter `./images/` as the path for your favicons.
-3. Click the button to generate your favicons and HTML code.
-4. After downloading the favicons, copy the `favicon.ico` file to the root folder where your `index.html` file is. `favicon.ico` is a throwback to original favicons. Most browsers prefer higher-res images, which we will place in the `images` folder. Copy the rest of the favicon files into the images folder. (You can delete the `placeholder.ico` file in the `images` folder.)
-5. Copy the the generated markup into `<head>`.
-6. Make sure the paths in the markup you just pasted direct to the browser to your `images` folder. For example, instead of<br>
-   `href="/apple-touch-icon.png"`<br>
-   you should have<br>
-   `href="./images/apple-touch-icon.png"`<br>
-   Check this path for all the favicon `href` attributes except for the `favicon.ico` one. Change the `favicon.ico` path to simply<br>
-   `<link rel="shortcut icon" href="favicon.ico">`
-   <br>
-   _Notice I also included a period or `.` before the first slash. Servers do not need the prefixed period, but Github pages does need it._
-
-## Check for errors and warnings, then view your page again using Live Server
+| 💡 How to hard reload a web page  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+ To force a page reload, on Window, press `Ctrl`-`Shift`-`R`or `Ctrl`-`F5`; on Mac press `⌘`-`⇧`-`R`.
 
 If everything looks good then.....
 
 ## :arrow_up: Use VS Code's Source Control (in the sidebar) to commit your changes and sync these changes to Github
+
+Open the Source Control menu from the VS Code Activity bar. You should see a list of files that have been changed. Enter a commit message and click the checkmark to commit your changes. You can also use the keyboard shortcut `Ctrl`-`Enter` to commit your changes.
 
 Open the repo in Github and check that you've passed the automated tests. Look at the top right of your repo header. If you have passed all the tests, you'll see a green check mark:
 
