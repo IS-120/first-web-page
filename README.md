@@ -136,13 +136,25 @@ If everything looks good then.....
 
 Open the Source Control menu from the VS Code Activity bar. You should see a list of files that have been changed. Enter a commit message and click `✓ Commit` to commit your changes. You can also use the keyboard shortcut `Ctrl`-`Enter` to commit your changes.
 
+Next, click ` ↻ Sync Changes ↑` to sync your changes to Github.
+
+## Publish your web page with Github Pages
+Open the repo in Github. Click on the `Settings` tab. Scroll down to the `Github Pages` section. Select `main` as the source branch and click `Save`. You should see a message that says `Your site is published at https://<your-github-username>.github.io/<your-repo-name>/`. Click on the link to view your published web page.
+
+## Enter your repo About information
+
+Open the repo in Github. Click on the `About` tab. Enter a description of your repo. This will be displayed on your repo's Github page. Click `Save`.
+
+## Validate your HTML with validator.nu
+
+
 Open the repo in Github and check that you've passed the automated tests. Look at the top right of your repo header. If you have passed all the tests, you'll see a green check mark:
 
-![passed tests](images/pass.png)
+![passed tests](readme-assets/pass.png)
 
 If you failed any tests, you will see a red X. Click on the X to see which test failed. Click on the failed test name for more details.
 
-![failed tests](images/fail.png)
+![failed tests](readme-assets/fail.png)
 
 If you see a yellow dot, it means that the test is still running. Wait for the test to finish.
 
